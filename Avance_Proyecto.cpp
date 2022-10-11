@@ -35,7 +35,7 @@ struct productos
 
 void Saludo_Bienvenida() {
 cout <<  "BIENVENIDO AL PROGRAMA \n";
-cout <<  "ES UN OPTIMIZADOR DE LISTAS DE PRODUCTOS EN FORMATO CSV \n";
+cout <<  "LEE ARCHIVOS EN CSV\n";
 cout << "################################################# \n";
 
 
@@ -465,6 +465,8 @@ for (std::string linea_datos; std::getline(lectura, linea_datos); )
 
 lectura.close();
 // termino de lectura de CSV de prueba
+cout << "----------------------------------------------------------------------------------------------------------------------------";
+cout << "\n";
 //--------------------------------------------------------------------------------------------------------------------------------
 // restricciones de combinaciones 
 combinaciones uno_c;
@@ -473,7 +475,7 @@ uno_c.tipo_carga = "Normal";
 uno_c.Masa = "Solida";
 uno_c.Pequeno_Toneladas = 12; 
 uno_c.Grandes_Toneladas = 24;
-uno_c.Tipo = "Contenedor";
+uno_c.Tipo = "Contenedor Grande";
 //--------------------------------------------------------------------------------------------------------------------------------
 combinaciones dos_c;
 dos_c.etiqueta(2);
@@ -545,7 +547,7 @@ diez_c.tipo_carga = "Normal";
 diez_c.Masa = "Gas";
 diez_c.Pequeno_Toneladas = 10;
 diez_c.Grandes_Toneladas = 20;
-diez_c.Tipo = "Estanque";
+diez_c.Tipo = "contenedor";
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 combinaciones once_c;
 once_c.etiqueta(11);
@@ -553,7 +555,7 @@ once_c.tipo_carga = "Inflamable";
 once_c.Masa = "Liquida";
 once_c.Pequeno_Toneladas = 10;
 once_c.Grandes_Toneladas = 20;
-once_c.Tipo = "Estanque";
+once_c.Tipo = "contenedor";
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 combinaciones doce_c;
 doce_c.etiqueta(12);
@@ -565,8 +567,59 @@ doce_c.Tipo = "Estanque";
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 combinaciones trece_c;
 trece_c.etiqueta(13);
-trece_c.tipo_carga = "Normal";
-trece_c.Masa = "Gas";
-return 0;
+trece_c.tipo_carga = "Inflamable";
+trece_c.Masa = "Solida";
+trece_c.Pequeno_Toneladas = 10;
+trece_c.Grandes_Toneladas = 20;
+trece_c.Tipo = "Contenedor";
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+combinaciones catorce_c;
+catorce_c.etiqueta(14);
+catorce_c.tipo_carga = "Refrigerada";
+catorce_c.Masa = "Solida";
+catorce_c.Pequeno_Toneladas = 12;
+catorce_c.Grandes_Toneladas = 24;
+catorce_c.Tipo = "Contenedor";
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+combinaciones quince_c;
+quince_c.etiqueta(15);
+quince_c.tipo_carga = "Refrigerada";
+quince_c.Masa = "Liquida";
+quince_c.Pequeno_Toneladas = 10;
+quince_c.Grandes_Toneladas = 20;
+quince_c.Tipo = "Contenedor";
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+combinaciones dieciséis_c;
+dieciséis_c.etiqueta(16);
+dieciséis_c.tipo_carga = "Inflamable";
+dieciséis_c.Masa = "Gas";
+dieciséis_c.Pequeno_Toneladas = 14;
+dieciséis_c.Grandes_Toneladas = 24;
+dieciséis_c.Tipo = "Estanque";
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+combinaciones diecisiete_c;
+diecisiete_c.etiqueta(17);
+diecisiete_c.tipo_carga = "Inflamable";
+diecisiete_c.Masa = "Liquida";
+diecisiete_c.Pequeno_Toneladas = 11;
+diecisiete_c.Grandes_Toneladas = 21;
+diecisiete_c.Tipo = "Contenedor";
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+combinaciones dieciocho_c;
+dieciocho_c.etiqueta(18);
+dieciocho_c.tipo_carga = "Refrigerada";
+dieciocho_c.Masa = "Solida";
+dieciocho_c.Pequeno_Toneladas = 15;
+dieciocho_c.Grandes_Toneladas = 25;
+dieciocho_c.Tipo = "Contenedor";
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Impresion Primera Combinacion
+cout << "En la Primera Combinacion" << endl;
+cout <<  "Es un tipo de carga  " << uno_c.tipo_carga << "\n";
+cout <<  "Con un tipo de Masa " << uno_c.Masa <<"\n ";
+cout <<  "La cantidad  Menor  de toneladas  a Transportar es de " <<  uno_c.Pequeno_Toneladas << "\n";
+cout <<  "La cantidad Grandes de toneladas  a Transportar es de " << uno_c.Grandes_Toneladas << "\n";
+cout <<  "El tipo de contenedor es " << uno_c.Tipo << "\n";
 
+return 0;
 };
