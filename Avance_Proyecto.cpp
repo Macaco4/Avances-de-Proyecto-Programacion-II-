@@ -10,6 +10,8 @@
 #include<vector>
 #include<algorithm>
 #include<iomanip>
+#include <stdlib.h>
+
 
 #define lista_csv "ejemplo_lista.csv"
 using namespace std;
@@ -613,13 +615,8 @@ dieciocho_c.Pequeno_Toneladas = 15;
 dieciocho_c.Grandes_Toneladas = 25;
 dieciocho_c.Tipo = "Contenedor";
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//Impresion Primera Combinacion
-cout << "En la Primera Combinacion" << endl;
-cout <<  "Es un tipo de carga  " << uno_c.tipo_carga << "\n";
-cout <<  "Con un tipo de Masa " << uno_c.Masa <<"\n ";
-cout <<  "La cantidad  Menor  de toneladas  a Transportar es de " <<  uno_c.Pequeno_Toneladas << "\n";
-cout <<  "La cantidad Grandes de toneladas  a Transportar es de " << uno_c.Grandes_Toneladas << "\n";
-cout <<  "El tipo de contenedor es " << uno_c.Tipo << "\n";
+
+
 
 return 0;
 };
